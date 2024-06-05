@@ -4,7 +4,8 @@ body {
     font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
     height: 100%;
-    overflow-x: hidden; 
+    overflow-x: hidden;
+    background-color: bisque;
 }
 
 .navbar {
@@ -15,7 +16,6 @@ body {
     position: fixed; 
     width: 100%;
     top: 0;
-    z-index: 100;
 }
 
 ::-webkit-scrollbar {display: none;}
@@ -32,7 +32,7 @@ body {
 }
 
 .navbar-logo img {
-    height: 50px;
+    height: 100px;
 }
 
 .hero-image {
@@ -67,11 +67,19 @@ body {
     margin-top: 10px;
 }
 
-
 .products {
-    background-color: #f4f4f4;
+    background-image: url('Recursos/Fondo_productos.jpg');
+    background-size: cover;
+    background-position: center;
     padding: 50px 20px;
     margin-top: 100px;
+}
+
+.titulo{
+    color:#fff;
+    font-size: 30px;
+    margin: 0;
+    font-weight: 700;
 }
 
 .products h2 {
@@ -80,9 +88,12 @@ body {
 }
 
 .product-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center; 
+    max-width: 1000px; 
+    margin: 0 auto; 
 }
 
 .product {
@@ -110,6 +121,93 @@ body {
     animation: fadeIn 2s;
 }
 
+.pie-pagina{
+    width: 100%;
+    background-color: bisque;
+}
 
+.grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin:auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+    padding: 45px 0px;
+}
 
+.box figure{
+    width: 100%;
+}
 
+.box figure img{
+    width: 250px;
+}
+
+.box h2{
+    color:#463b01;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.box p{
+    color: #0f0101;
+    margin-bottom: 10px;
+}
+
+.redes-sociales a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    margin-right: 10px;
+    text-align: center;
+    transition:all 300ms ease;
+}
+
+.grupo-2{
+    padding: 15px 10px;
+    text-align: center;
+    color: #0f0101;
+}
+
+.grupo-2 small{
+    font-size: 15px;
+}
+
+.mapa{
+    width: 150%;
+    height: 80%;
+}
+
+@media screen and (max-width:800px) {
+    .pie-pagina .grupo-1{
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+        padding: 35px 0px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .hero-text h1 {
+        font-size: 36px;
+    }
+    
+    .hero-text p {
+        font-size: 18px;
+    }
+
+    .product {
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar-logo img {
+        height: 80px;
+    }
+}
