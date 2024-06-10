@@ -13,7 +13,7 @@ body {
     justify-content: space-around;
     align-items: center;
     background: none;
-    position: fixed; 
+    position: absolute; 
     width: 100%;
     top: 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -36,13 +36,14 @@ body {
 .navbar-logo img {
     height: 80px;
     background-color: #000;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 .hero-image {
     background-image: url('Recursos/Fondo_principal.jpg');
     background-size: cover;
     background-position: center;
+    position: relative;
     height: 100vh;
     display: flex;
     flex-direction: column;
