@@ -52,24 +52,48 @@ body {
     color: #000;
     text-align: left;
     padding: 20px;
+    
 }
 
-.hero-text {
-    max-width: 600px;
+.hero-text h6{
+    font-size: 22px;
+    font-weight: 900;
+    font-family: "Montserrat", Sans-serif;
+    color: #fff;
 }
-
 .hero-text h1 {
-    font-size: 48px;
+    font-size: 72px;
+    font-weight: 900;
     margin: 0;
-    font-weight: 700;
-    color: #000;
+    color: #ffffff;
+    font-family: "Montserrat", Sans-serif;
 }
 
 .hero-text p {
+    font-size: 22px;
+    font-weight: 900;
+    font-family: "Montserrat", Sans-serif;
+    color: #fff;
+}
+.conocenos {
     font-size: 24px;
     font-weight: 400;
     margin-top: 10px;
-    color: #a7453e;
+    color: #ffffff;
+    background-color: #000;
+    font-family: "Montserrat", Sans-serif;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.conocenos:hover {
+    background-color: #333;
+    color: #fff;
+    transform: scale(1.05);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
 }
 
 .products {
@@ -109,7 +133,23 @@ body {
     border-bottom: 1px solid #ddd;
     margin-bottom: 10px;
 }
+.carrito{
+    color: #f0ebeb;
+    background-color: #000000;
+    font-family: "Montserrat", Sans-serif;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 
+.carrito:hover {
+    background-color: bisque;
+    color: #0a0a0a;
+    transform: scale(1.05);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
