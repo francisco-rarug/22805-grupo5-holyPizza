@@ -24,7 +24,7 @@ body {
     text-shadow: 2px 2px 4px rgb(6, 117, 30);
 }
 
-.navbar2{
+.navbar{
     display: flex;
     background-color: rgba(255, 255, 255, 0) !important; 
     justify-content: space-between;
@@ -34,7 +34,7 @@ body {
     width: 100%;
 }
 
-.navbar2 .botonera{
+.navbar .botonera{
     display: inherit;
     justify-content: center;
     align-items: center;
@@ -42,13 +42,13 @@ body {
 
 } 
 
-.navbar2 .botonera a{
+.navbar .botonera a{
     background-color: rgba(255, 255, 255, 0) !important; 
     border: none;
     color: white;
     font-size: 1.1rem;
 }
-.navbar2 .botonera a:hover{
+.navbar .botonera a:hover{
     color: #e40c0c;
 }
 
@@ -95,18 +95,24 @@ body {
 }
 
 .products {
-    background-image: url('Recursos/fondo_products.jpg');
-    background-size: cover;
-    background-position: center;
     padding: 50px 20px;
 }
 
-.titulo {
-    background-color: #25d366;
-    color: #141212;
+.titulo-rojo {
+    background-color: #e70909;
+    color: #ffffff;
     font-size: 30px;
     font-weight: 700;
     text-align: center;
+    padding: 20px;
+}
+.titulo-verde{
+    background-color: #25d366;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    padding: 20px;
 }
 
 .product-grid {
@@ -151,7 +157,6 @@ body {
 }
 
 .promosExclusivas {
-    background-color: #1ebc5b;
     margin: 0 auto;
     padding: 20px;
 }
@@ -219,13 +224,13 @@ body {
 }
 
 
+
 .pepe{
     margin: auto;
     height: 300px;
 }
-.carrousel{
-    background-color: #050505;
-}
+
+
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
