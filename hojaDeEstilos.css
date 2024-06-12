@@ -9,14 +9,12 @@ body {
 }
 
 .navbar {
+    background-color: #050505;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background: none;
-    position: absolute; 
     width: 100%;
-    top: 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: 120px;
 }
 
 .navbar a {
@@ -24,18 +22,16 @@ body {
     text-decoration: none;
     padding: 10px 15px;
     font-weight: 700;
-    border-radius: 20px;
-    background-color: #000;
+    font-size: 1.5rem;
     transition: background-color 0.3s ease;
 }
 
 .navbar a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+    color: #e40c0c;
 }
 
 .navbar-logo img {
     height: 80px;
-    background-color: #000;
     border-radius: 10px;
 }
 
@@ -43,8 +39,7 @@ body {
     background-image: url('Recursos/Fondo_principal.jpg');
     background-size: cover;
     background-position: center;
-    position: relative;
-    height: 100vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -149,6 +144,83 @@ body {
     color: #0a0a0a;
     transform: scale(1.05);
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.promosExclusivas {
+    background-color: #1ebc5b;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.promos-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.promos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 1000px;
+    padding: 20px;
+    margin: auto;
+}
+
+.promos img {
+    max-width: 400px;
+    max-height: 150px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-right: 20px; 
+}
+
+.promos-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.promos-content h3 {
+    margin: 0 0 10px 0; 
+    font-size: 1.5em;
+    color: #333333;
+}
+
+.promos-content p {
+    margin: 0 0 20px 0;
+    font-size: 1em;
+    color: #666666;
+    text-align: left; 
+}
+
+.promos .wpp {
+    background-color: #25d366;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.promos .wpp:hover {
+    background-color: #1ebc5b;
+}
+
+
+.pepe{
+    margin: auto;
+    height: 300px;
+}
+.carrousel{
+    background-color: #050505;
 }
 @keyframes fadeIn {
     from { opacity: 0; }
