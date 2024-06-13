@@ -1,24 +1,26 @@
-html {
-    background: url('Recursos/Fondo_principal.jpg') no-repeat center center fixed;
-
+body {
+    background: linear-gradient(rgba(0, 0, 0, 1),rgba(0, 0, 0, 0.1) ) ,  
+    url('Recursos/pizzahome.jpg') no-repeat center center/cover;
+    height: auto;
 }
 
 .contenedor {
 
-    margin: 100px auto;
+    margin: auto;
     width: 400px;
+    height: auto;
     padding: 30px;
     border-radius: 10px;
-    /* background: transparent; no funciona*/
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.336), rgba(19, 19, 19, 0.336));
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.336), rgba(19, 19, 19, 0.336)),
+    rgba(255, 255, 255, 0.03); 
+    align-items: center;
 }
 
 .contenedor h2 {
     margin: 30px 120px 30px 120px;
-    background: url('Recursos/fondo.png'), linear-gradient(to right, #ff94c4, #b1b1b1);
-    border-radius: 4px;
+    width:max-content;
     font-size: 30px;
-    color: #1f1f1f;
+    color:antiquewhite;
     text-align: center;
     letter-spacing: 5px;
     text-transform: uppercase;
@@ -28,9 +30,12 @@ html {
 .contenedor .elemento label {
     margin: 30px 0px 30px 0px;
     padding: 5px;
-    background: url('Recursos/fondo.png'), linear-gradient(to right, #ff94c4, #b1b1b1);
     border-radius: 4px;
-
+    font-size: 15px;
+    color:antiquewhite;
+    text-align: center;
+    letter-spacing: 5px;
+    text-transform: uppercase;
 
 }
 
@@ -46,13 +51,49 @@ html {
 }
 
 .contenedor .elemento input[type="submit"] {
-    background: url(fondo.png), linear-gradient(to right, #ff4e9e, #b1b1b1);
     border: none;
     letter-spacing: 5px;
     text-transform: uppercase;
     cursor: pointer;
     padding: 15px;
     margin-top: 30px;
+}
+
+.contenedor .elemento input[type="submit"]:hover {
+    background-color: #ccc;
+    color: black;
+}
+
+.navbar1{
+    display: flex;
+    background-color: rgba(255, 255, 255, 0) !important; 
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0.8rem 1rem;
+    width: 100%;
+}
+
+.navbar1 .botonera{
+    display: inherit;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+
+} 
+
+.navbar1 .botonera a{
+    background-color: rgba(255, 255, 255, 0) !important; 
+    border: none;
+    color: white;
+    font-size: 1.1rem;
+}
+.navbar1 .botonera a:hover{
+    color: #e40c0c;
+}
+
+.logo{
+    width: 4rem;
 }
 
 #container {
