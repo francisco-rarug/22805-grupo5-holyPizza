@@ -1,61 +1,71 @@
-html{
+html {
     background: black;
-    
+
 }
 
 body {
-    background: linear-gradient(rgba(0, 0, 0, 1),rgba(0, 0, 0, 0.1) ) ,  
-    url('Recursos/pizzahome.jpg') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1)),
+        url('Recursos/pizzahome.jpg') no-repeat center center/cover;
     height: 900px;
 }
 
 .contenedor {
 
     margin: auto;
-    width: 400px;
+    width: 500px;
     height: auto;
     padding: 30px;
     border-radius: 10px;
     background: linear-gradient(to right, rgba(0, 0, 0, 0.336), rgba(19, 19, 19, 0.336)),
-    rgba(255, 255, 255, 0.03); 
-    align-items: center;
+        rgba(255, 255, 255, 0.03);
 }
 
-.contenedor h2 {
+h2 {
     margin: 30px 120px 30px 120px;
-    width:max-content;
     font-size: 30px;
-    color:antiquewhite;
+    color: rgb(255, 145, 0);
     text-align: center;
     letter-spacing: 5px;
     text-transform: uppercase;
 
 }
 
-.contenedor .elemento label {
+
+.elemento {
     margin: 30px 0px 30px 0px;
     padding: 5px;
     border-radius: 4px;
     font-size: 15px;
-    color:antiquewhite;
-    text-align: center;
+    color: rgb(255, 145, 0);
+    text-align: left;
     letter-spacing: 5px;
     text-transform: uppercase;
-
 }
 
-.contenedor .elemento input {
+.opciones label {
+    color: antiquewhite;
+    font-size: 13px;
+    width: 400px;
+    text-align: left;
+    align-items: left;
+}
+
+.opciones label:hover {
+    color: rgb(255, 145, 0);
+}
+
+input {
     width: 100%;
     margin-top: 5px;
     padding: 10px 0;
-    color: #fff;
+    color: rgb(255, 145, 0);
     background: transparent;
     border: none;
     border-bottom: 1px solid #fff;
     margin-bottom: 30px;
 }
 
-.contenedor .elemento input[type="submit"] {
+input[type="submit"] {
     border: none;
     letter-spacing: 5px;
     text-transform: uppercase;
@@ -64,14 +74,14 @@ body {
     margin-top: 30px;
 }
 
-.contenedor .elemento input[type="submit"]:hover {
+input[type="submit"]:hover {
     background-color: #ccc;
     color: black;
 }
 
-.navbar1{
+.navbar1 {
     display: flex;
-    background-color: rgba(255, 255, 255, 0) !important; 
+    background-color: rgba(255, 255, 255, 0) !important;
     justify-content: space-between;
     align-items: center;
 
@@ -79,76 +89,21 @@ body {
     width: 100%;
 }
 
-.navbar1 .botonera{
+.navbar1 .botonera {
     display: inherit;
     justify-content: center;
     align-items: center;
     gap: 0.4rem;
 
-} 
+}
 
-.navbar1 .botonera a{
-    background-color: rgba(255, 255, 255, 0) !important; 
+.navbar1 .botonera a {
+    background-color: rgba(255, 255, 255, 0) !important;
     border: none;
     color: white;
     font-size: 1.1rem;
 }
-.navbar1 .botonera a:hover{
+
+.navbar1 .botonera a:hover {
     color: #e40c0c;
-}
-
-.logo{
-    width: 4rem;
-}
-
-#container {
-    display: none;
-    background-color: rgba(160, 113, 136, 0.74);
-    border-radius: 10%;
-    margin-left: 25%;
-    margin-right: 25%;
-    text-align: center;
-    font-size: 25px;
-    padding-top: 5px;
-    padding-bottom: 10px;
-}
-
-#textcarga {
-    margin: 5px 5px 10px 5px;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    background-color: #b1b1b149;
-    border-radius: 10px;
-    font-family: monospace;
-    font-size: 16px;
-    position: center;
-
-}
-
-#carga {
-    position: center;
-
-    display: none;
-    border: 15px solid #ccc;
-    border-top-color: #F4266A;
-    border-top-style: groove;
-    height: 100px;
-    width: 100px;
-    border-radius: 100%;
-    position: center;
-    margin: auto;
-
-    animation: girar duration 2.5s linear infinite;
-    -o-animation: girar 2.5s linear infinite;
-    animation: girar 2.5s linear infinite;
-}
-
-@keyframes girar {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
 }
