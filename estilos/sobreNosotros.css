@@ -86,7 +86,11 @@ body {
 /*ACERCA DE*/
 .barra-divisora{
     height: 4rem;
-    background-color: #10cf1a;
+    background-color: #1ebc5b;
+}
+
+.segunda-barra {
+    background-color: #ff0000; 
 }
 
 .quienes-somos{
@@ -125,6 +129,18 @@ body {
     width: 100%;
     text-align:justify;
 
+}
+
+/*POR QUE ELEGIRNOS*/
+
+.text-justify {
+    text-align: justify;
+}
+
+.standardized-image {
+    width: 100%;
+    height: 30rem; /* Ajusta la altura según sea necesario */
+    object-fit: cover; /* Esto asegura que la imagen cubra el contenedor sin distorsionarse */
 }
 
 /*NUESTRAS SUCURSALES*/
