@@ -7,7 +7,7 @@ body {
     box-sizing: border-box;
     height: 100%;
     overflow-x: hidden;
-    background-color: rgb(128, 105, 78)!important;
+    background-color: rgb(245, 243, 242)!important;
 }
 
 
@@ -86,21 +86,22 @@ body {
 /*ACERCA DE*/
 .barra-divisora{
     height: 4rem;
-    background-color: #1ebc5b;
+    background-color: #008D44;
 }
 
 .segunda-barra {
-    background-color: #ff0000; 
+    background-color: #C82A35; 
 }
 
 .quienes-somos{
-     min-height: 20rem;
+     min-height: 40rem;
      padding: 5rem 0rem;
      display: flex;
      justify-content: center;
      align-items: center;
      flex-direction: column;
      width: 100%;
+     background: linear-gradient(rgba(0, 0, 0, 1.1),rgba(0, 0, 0, 0.5) ) , url('../Recursos/fondo-acerca-de.jpg') no-repeat center center/cover;
 }
 
 .quienes-somos .container{
@@ -110,12 +111,24 @@ body {
     gap: 5rem;
     width: 100%;
     height: 100%;
-    background-color: aliceblue;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 1rem;
     padding: 1rem;
+}
+
+.quienes-somos .container .informacion h4{
+    color: rgb(255, 255, 255);
+}
+
+.quienes-somos .container .informacion p{
+    color: rgb(207, 207, 207);
 }
 
 .sub-titulo{
     margin-bottom: 4rem;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 3px #cac7c7;
+    font-weight: lighter;
 }
 
 .quienes-somos .container .informacion{
@@ -137,11 +150,7 @@ body {
     text-align: justify;
 }
 
-.standardized-image {
-    width: 100%;
-    height: 30rem; /* Ajusta la altura según sea necesario */
-    object-fit: cover; /* Esto asegura que la imagen cubra el contenedor sin distorsionarse */
-}
+
 
 /*NUESTRAS SUCURSALES*/
 
@@ -181,6 +190,52 @@ iframe{
 
 }
 
+/*PORQUE ELEGIRNOS*/
 
+.card-elegir{
+    background-color: rgba(177, 27, 37, 0.9) !important; 
+    padding: 0.5rem;
+    box-sizing: content-box;
+}
+
+.card-elegir .card-title{
+    color: rgb(247, 247, 247)!important;
+    font-size: 1.4rem;
+}
+
+.card-elegir .card-text{
+    color: rgb(230, 227, 227);
+    line-height: 1.7rem;
+}
+
+.bi-star-fill{
+    color: rgb(238, 238, 10);
+}
+
+/*CELEBRITIS*/
+
+.famosos{
+    padding: 2rem;
+}
+
+.card-celebridad{
+    background-color: rgba(0, 141, 68, 0.9) !important;
+    width: 24rem;
+    object-fit: cover;
+
+    
+}
+
+.card-celebridad .card-title{
+    color: rgb(247, 247, 247)!important;
+}
+
+.standardized-image {
+    width: 100%;
+    height: 100%; /* Ajusta la altura según sea necesario */
+    object-fit: cover; /* Esto asegura que la imagen cubra el contenedor sin distorsionarse */
+    max-height: 100%;     /* Asegura que la imagen no exceda el tamaño del contenedor */
+
+}
 
 
