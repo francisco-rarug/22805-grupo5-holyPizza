@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    height: 100%;
+    overflow-x: hidden;
+    background-color: rgb(128, 117, 103) !important;
+}
+
+.navbar{
+    display: flex;
+    background-color: rgba(9, 8, 8, 0.899) !important; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 1rem;
+    position: absolute;
+    width: 100%;
+}
+
+.navbar .botonera{
+    display: inherit;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+
+} 
+
+.navbar .botonera a{
+    background-color: rgba(255, 255, 255, 0) !important; 
+    border: none;
+    color: white;
+    font-size: 1.1rem;
+}
+.navbar .botonera a:hover{
+    color: #e40c0c;
+}
+.logo{
+    width: 4rem;
+}
+
+
+
+
+.pie-pagina {
+    width: 100%;
+    background-color: bisque;
+    
+}
+
+.grupo-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin:auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+    padding: 45px 0px;
+}
+
+.box figure {
+    width: 100%;
+}
+
+.box figure img {
+    width: 250px;
+}
+
+.box h2 {
+    color:#463b01;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.box p {
+    color: #0f0101;
+    margin-bottom: 10px;
+}
+
+.redes-sociales a {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    margin-right: 10px;
+    text-align: center;
+    transition:all 300ms ease;
+}
+
+.grupo-2 {
+    padding: 15px 10px;
+    text-align: center;
+    color: #0f0101;
+}
+
+.grupo-2 small {
+    font-size: 15px;
+}
+
+.mapa {
+    width: 150%;
+    height: 80%;
+}
