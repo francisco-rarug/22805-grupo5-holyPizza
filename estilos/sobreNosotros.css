@@ -238,4 +238,19 @@ iframe{
 
 }
 
+/* PIE DE PAGINA */
+.pie-pagina {
+    width: 100%;
+    background-color: bisque;
+}
+
+@media screen and (max-width:800px) {
+    .pie-pagina .grupo-1 {
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+        padding: 35px 0px;
+    }
+}
+
 
