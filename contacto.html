@@ -1,14 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
+    <link rel="stylesheet" href="estilosContacto.css">
     <link rel="shortcut icon" href="Recursos/Coffee-Logo-PNG-File.png" type="image/x-icon">
 </head>
+
 <body>
 
-    <h2>Contacto</h2>
-    
+    <header>
+        <nav class="navbar">
+            <div class="navbar-left">
+                <a href="index.html">Inicio</a>
+                <a href="sobreNosotros.html">Sobre Nosotros</a>
+            </div>
+            <div class="navbar-logo">
+                <img src="Recursos/Pizza_logo.png" alt="Logo del Café">
+            </div>
+            <div class="navbar-right">
+                <a href="#">Menu</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+        </nav>
+    </header>
+
+    <h1 class="contacto_titulo">Contacto</h1>
+
+    <div class="contacto_datos_conteiner">
+        <div class="asd">
+
+            <h3 class="contacto_datos"><img src="Recursos/icons/ubicacion_logo.png" alt="ubi"> Direccion</h3>
+            <h3 class="datos">Anatole france 2042</h3>
+            <h3 class="pixel"></h3>
+        </div>
+        <div class="asd">
+
+            <h3 class="contacto_datos"><img class="img" src="Recursos/icons/telefono_logo.png" alt="telefono"> Telefono
+            </h3>
+            <h3 class="datos">1135590553</h3>
+            <h3 class="pixel"></h3>
+        </div>
+        <div class="asd">
+
+            <h3 class="contacto_datos"><img class="img" src="Recursos/icons/mail_logo.png" alt="mail"> Email</h3>
+            <h3 class="datos">thiagotomasramos@gmail.com</h3>
+            <h3 class="pixel"></h3>
+        </div>
+    </div>
+
+    <div class='descripcion'>Bienvenido al formulario de consultas. Dejanos tu consulta para poder seguir mejorando
+    </div>
+
+
+    <div class="formulario">
+        <h2>Mandanos tu consulta:</h2>
+        <form action="enviar_consulta.php" method="POST">
+            <label for="nombre">Nombre ⬇</label><br>
+            <input type="text" id="nombre" name="nombre" required><br>
+
+            <label for="apellido">Apellido ⬇</label><br>
+            <input type="text" id="apellido" name="apellido" required><br>
+
+            <label for="email">Email ⬇</label><br>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="mensaje">Mensaje ⬇</label><br>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+    <h3 class="bandera"></h3>
+
 </body>
+
 </html>

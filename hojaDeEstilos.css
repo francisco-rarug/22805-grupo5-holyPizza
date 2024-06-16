@@ -13,10 +13,11 @@ body {
     justify-content: space-around;
     align-items: center;
     background: none;
-    position: absolute; 
+    position: absolute;
     width: 100%;
     top: 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
 }
 
 .navbar a {
@@ -30,12 +31,12 @@ body {
 }
 
 .navbar a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 .navbar-logo img {
     height: 80px;
-    background-color: #000;
+    background-color: #f0eeee;
     border-radius: 10px;
 }
 
@@ -49,7 +50,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    color: #000;
+    color: #ecebeb;
     text-align: left;
     padding: 20px;
 }
@@ -90,8 +91,8 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
-    max-width: 1000px; 
-    margin: 0 auto; 
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .product {
@@ -111,8 +112,13 @@ body {
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 .products {
@@ -127,7 +133,7 @@ body {
 .grupo-1 {
     width: 100%;
     max-width: 1200px;
-    margin:auto;
+    margin: auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 50px;
@@ -143,7 +149,7 @@ body {
 }
 
 .box h2 {
-    color:#463b01;
+    color: #463b01;
     margin-bottom: 25px;
     font-size: 20px;
 }
@@ -161,7 +167,7 @@ body {
     line-height: 45px;
     margin-right: 10px;
     text-align: center;
-    transition:all 300ms ease;
+    transition: all 300ms ease;
 }
 
 .grupo-2 {
@@ -192,7 +198,7 @@ body {
     .hero-text h1 {
         font-size: 36px;
     }
-    
+
     .hero-text p {
         font-size: 18px;
     }

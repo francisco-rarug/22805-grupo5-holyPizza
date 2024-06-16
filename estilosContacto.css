@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    height: 100%;
+    background-color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: none;
+    width: 100%;
+    top: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: green;
+}
+
+.navbar a {
+    color: #f0ebeb;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-weight: 700;
+    border-radius: 20px;
+    background-color: #000;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.navbar-logo img {
+    height: 80px;
+    background-color: #000000;
+    border-radius: 10px;
+}
+
+.contacto_titulo {
+    padding-left: 3em;
+    margin-bottom: 0px;
+    width: 15%;
+}
+
+.pixel {
+    width: 50%;
+    height: 1px;
+    margin-top: 1px;
+    background-color: black;
+    vertical-align: middle;
+    margin: auto;
+
+}
+
+.contacto_datos_conteiner {
+    display: flex;
+    justify-content: center;
+
+    margin: auto;
+    padding: auto;
+    width: 100%;
+}
+
+.asd {
+    display: inline-block;
+    width: 33%;
+    margin: auto;
+}
+
+.contacto_datos {
+    text-align: center;
+    display: block;
+}
+
+.datos {
+    text-align: center;
+    display: block;
+}
+
+.img {
+    width: 20px;
+    height: 20px;
+}
+
+.descripcion {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #555;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #ecf0f1;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.formulario {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    border: 3px solid #008000;
+
+}
+
+.formulario label {
+    text-align: center;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #000;
+}
+
+.bandera {
+    width: 100%;
+    height: 80px;
+    background-color: red;
+    vertical-align: middle;
+    margin: auto;
+
+}
