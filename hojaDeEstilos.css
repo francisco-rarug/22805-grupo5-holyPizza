@@ -8,9 +8,9 @@ body {
     background-color: bisque;
 }
 
-.imagen-tarjeta {
-    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1)),
-        url('Recursos/pizzahome.jpg') no-repeat center center/cover;
+.imagen-tarjeta{
+    background: linear-gradient(rgba(0, 0, 0, 1),rgba(0, 0, 0, 0.1) ) ,  
+    url('Recursos/pizzahome.jpg') no-repeat center center/cover;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -18,15 +18,15 @@ body {
     align-items: center;
 }
 
-.imagen-tarjeta h1 {
+.imagen-tarjeta h1{
     color: #fff;
     font-size: 3.5rem;
     text-shadow: 2px 2px 4px rgb(6, 117, 30);
 }
 
-.navbar {
+.navbar{
     display: flex;
-    background-color: rgba(255, 255, 255, 0) !important;
+    background-color: rgba(255, 255, 255, 0) !important; 
     justify-content: space-between;
     align-items: center;
     padding: 0.8rem 1rem;
@@ -34,30 +34,29 @@ body {
     width: 100%;
 }
 
-.navbar .botonera {
+.navbar .botonera{
     display: inherit;
     justify-content: center;
     align-items: center;
     gap: 0.4rem;
 
-}
+} 
 
-.navbar .botonera a {
-    background-color: rgba(255, 255, 255, 0) !important;
+.navbar .botonera a{
+    background-color: rgba(255, 255, 255, 0) !important; 
     border: none;
     color: white;
     font-size: 1.1rem;
 }
-
-.navbar .botonera a:hover {
+.navbar .botonera a:hover{
     color: #e40c0c;
 }
 
-.logo {
+.logo{
     width: 4rem;
 }
 
-.imagen-tarjeta h6 {
+.imagen-tarjeta h6{
     font-size: 22px;
     font-weight: 900;
     font-family: "Montserrat", Sans-serif;
@@ -71,11 +70,9 @@ body {
     color: #fff;
     text-shadow: 2px 2px 4px rgb(117, 6, 6);
 }
-
-.icono {
+.icono{
     height: 30px;
 }
-
 .conocenos {
     font-size: 24px;
     font-weight: 400;
@@ -106,8 +103,7 @@ body {
     text-align: center;
     padding: 20px;
 }
-
-.titulo-verde {
+.titulo-verde{
     background-color: #25d366;
     color: #ffffff;
     font-size: 30px;
@@ -118,23 +114,23 @@ body {
 
 .opciones {
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 10px; 
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 auto; 
 }
 
 .opciones-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;/
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; /
 }
 
 .opcion-imagen {
     padding: 20px;
-    text-align: center;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
+    text-align: center; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s; 
 }
 
 .opcion-imagen:hover {
@@ -142,13 +138,13 @@ body {
 }
 
 .opcion-imagen img {
-    max-width: 100px;
+    max-width: 100px; 
     margin-bottom: 10px;
 }
 
 .opcion-imagen h3 {
     font-size: 1.2em;
-    color: #333;
+    color: #333; 
 }
 
 .productos {
@@ -160,8 +156,8 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
-    max-width: 1000px;
-    margin: 0 auto;
+    max-width: 1000px; 
+    margin: 0 auto; 
 }
 
 .tarjeta-productos {
@@ -182,8 +178,7 @@ body {
     border-radius: 10px;
     object-fit: cover;
 }
-
-.mas-informacion {
+.mas-informacion{
     font-size: 24px;
     font-weight: 400;
     margin: 20px auto;
@@ -197,12 +192,11 @@ body {
     transition: all 0.3s ease-in-out;
 }
 
-.mas-informacion:hover {
+.mas-informacion:hover{
     background-color: #25d366;
     transform: scale(1.05);
 }
-
-.carrito {
+.carrito{
     color: #f0ebeb;
     background-color: #000000;
     font-family: "Montserrat", Sans-serif;
@@ -249,7 +243,7 @@ body {
     max-height: 150px;
     border-radius: 10px;
     object-fit: cover;
-    margin-right: 20px;
+    margin-right: 20px; 
 }
 
 .promos-content {
@@ -259,7 +253,7 @@ body {
 }
 
 .promos-content h3 {
-    margin: 0 0 10px 0;
+    margin: 0 0 10px 0; 
     font-size: 1.5em;
     color: #333333;
 }
@@ -268,7 +262,7 @@ body {
     margin: 0 0 20px 0;
     font-size: 1em;
     color: #666666;
-    text-align: left;
+    text-align: left; 
 }
 
 .promos .wpp {
@@ -287,22 +281,21 @@ body {
     background-color: #1ebc5b;
 }
 
-
-
-.pepe {
+.pagos{
     margin: auto;
     height: 300px;
 }
 
+.tarjetas{
+    margin: auto;
+    height: 300px;
+    padding: 50px;
+}
+
 
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 .products {
@@ -317,7 +310,7 @@ body {
 .grupo-1 {
     width: 100%;
     max-width: 1200px;
-    margin: auto;
+    margin:auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 50px;
@@ -333,7 +326,7 @@ body {
 }
 
 .box h2 {
-    color: #463b01;
+    color:#463b01;
     margin-bottom: 25px;
     font-size: 20px;
 }
@@ -351,7 +344,7 @@ body {
     line-height: 45px;
     margin-right: 10px;
     text-align: center;
-    transition: all 300ms ease;
+    transition:all 300ms ease;
 }
 
 .grupo-2 {
@@ -369,131 +362,141 @@ body {
     height: 80%;
 }
 
+@media screen and (max-width:800px) {
+    
+}
 
 @media screen and (max-width: 650px) {
 
-    body {
+    body{
         font-size: 14px;
     }
-
     /*Imagen Principal*/
-    .imagen-tarjeta {
+    .imagen-tarjeta{
         height: 70vh;
         padding: 20px;
         text-align: center;
+        
     }
 
-    .imagen-tarjeta h1 {
-        font-size: 2rem;
+    .imagen-tarjeta h1{
+        display: none;
     }
-
-    .imagen-tarjeta h6,
-    .imagen-tarjeta p {
+    .imagen-tarjeta h6{
+        display: none;
+    }
+    .imagen-tarjeta p{
         font-size: 1rem;
+        margin-top: 200px;
     }
 
     /*Navbar*/
-    .navbar {
+    .navbar{
         flex-direction: column;
         padding: 0.5rem;
     }
-
-    .navbar .botonera {
+    .navbar .botonera{
+        display: flex;
         flex-direction: column;
         padding: 0.2rem;
+        align-items: center;
+
     }
 
-    .logo {
+    .navbar .botonera a{
+        margin: 5px 0;
+    }
+
+    .logo{
         width: 3rem;
     }
 
     /*conocenos*/
-    .conocenos {
+    .conocenos{
         font-size: 1.2rem;
         padding: 10px;
     }
 
     /*Titulos*/
     .titulo-rojo,
-    .titulo-verde {
+    .titulo-verde{
         font-size: 1.5rem;
         padding: 10px;
     }
 
     /*opciones*/
-    .opciones {
+    .opciones{
         padding: 10px;
     }
 
-    .opciones-grid {
+    .opciones-grid{
         grid-template-columns: 1fr;
     }
 
-    .opcion-imagen {
+    .opcion-imagen{
         padding: 10px;
     }
 
-    .opcion-imagen img {
+    .opcion-imagen img{
         max-width: 70px;
     }
 
-    .opcion-imagen h3 {
+    .opcion-imagen h3{
         font-size: 1rem;
     }
 
     /*Productos*/
-    .productos {
+    .productos{
         padding: 20px;
     }
 
-    .productos-grid {
+    .productos-grid{
         grid-template-columns: 1fr;
     }
 
-    .tarjeta-productos {
-        margin: 5px;
+    .tarjeta-productos{
+        margin:5px;
         padding: 10px;
     }
 
-    .tarjeta-productos img {
+    .tarjeta-productos img{
         height: 100px;
     }
 
     /*Mas informacion*/
-    .mas-informacion {
+    .mas-informacion{
         font-size: 1.2rem;
         padding: 10px;
     }
 
     /*carrito boton*/
-    .carrito {
+    .carrito{
         font-size: 1rem;
         padding: 10px;
     }
 
     /*promos*/
-    .promos {
+    .promos{
         flex-direction: column;
         width: 100%;
         padding: 10px;
     }
 
-    .promos img {
+    .promos img{
         max-width: 100%;
         margin-bottom: 10px;
     }
 
-    .promos-content {
+    .promos-content{
         font-size: 0.9rem;
     }
 
     /*footer*/
-    .grupo1 {
+    .grupo1{
         grid-template-columns: 1fr;
-        gap: 20px;
+        gap:20px;
         padding: 20px 0;
     }
-
     .pie-pagina .grupo-1 {
         width: 20%;
         grid-template-columns: repeat(1, 1fr);
@@ -501,35 +504,35 @@ body {
         padding: 35px 0px;
     }
 
-    .box figure img {
+    .box figure img{
         width: 100%;
     }
 
-    .box h2 {
+    .box h2{
         font-size: 1.5rem;
     }
 
-    .box p {
+    .box p{
         font-size: 0.9rem;
     }
 
-    .redes-sociales a {
+    .redes-sociales a{
         width: 35px;
         height: 35px;
         line-height: 35px;
         padding: 10px;
     }
 
-    .grupo-2 small {
+    .grupo-2 small{
         font-size: 0.8rem;
     }
 
-    .mapa {
+    .mapa{
         width: 100%;
         height: 200px;
     }
 
-    .img-pie {
+    .img-pie{
         height: 10rem;
         width: 10rem;
     }
