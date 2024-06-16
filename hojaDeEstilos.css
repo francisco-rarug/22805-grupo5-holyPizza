@@ -281,11 +281,15 @@ body {
     background-color: #1ebc5b;
 }
 
-
-
-.pepe{
+.pagos{
     margin: auto;
     height: 300px;
+}
+
+.tarjetas{
+    margin: auto;
+    height: 300px;
+    padding: 50px;
 }
 
 
@@ -372,15 +376,18 @@ body {
         height: 70vh;
         padding: 20px;
         text-align: center;
+        
     }
 
     .imagen-tarjeta h1{
-        font-size: 2rem;
+        display: none;
     }
-
-    .imagen-tarjeta h6,
+    .imagen-tarjeta h6{
+        display: none;
+    }
     .imagen-tarjeta p{
         font-size: 1rem;
+        margin-top: 200px;
     }
 
     /*Navbar*/
@@ -389,8 +396,15 @@ body {
         padding: 0.5rem;
     }
     .navbar .botonera{
+        display: flex;
         flex-direction: column;
         padding: 0.2rem;
+        align-items: center;
+
+    }
+
+    .navbar .botonera a{
+        margin: 5px 0;
     }
 
     .logo{
