@@ -8,22 +8,7 @@ body {
     background-color: bisque;
 }
 
-.imagen-tarjeta{
-    background: linear-gradient(rgba(0, 0, 0, 1),rgba(0, 0, 0, 0.1) ) ,  
-    url('Recursos/pizzahome.jpg') no-repeat center center/cover;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-
-.imagen-tarjeta h1{
-    color: #fff;
-    font-size: 3.5rem;
-    text-shadow: 2px 2px 4px rgb(6, 117, 30);
-}
-
+/*Navbar*/
 .navbar{
     display: flex;
     background-color: rgba(255, 255, 255, 0) !important; 
@@ -54,6 +39,23 @@ body {
 
 .logo{
     width: 4rem;
+}
+
+/*Imagen principal junto con titulos*/
+.imagen-tarjeta{
+    background: linear-gradient(rgba(0, 0, 0, 1),rgba(0, 0, 0, 0.1) ) ,  
+    url('Recursos/pizzahome.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imagen-tarjeta h1{
+    color: #fff;
+    font-size: 3.5rem;
+    text-shadow: 2px 2px 4px rgb(6, 117, 30);
 }
 
 .imagen-tarjeta h6{
@@ -94,7 +96,7 @@ body {
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
 }
 
-
+/*Titulos de secciones*/
 .titulo-rojo {
     background-color: #e70909;
     color: #ffffff;
@@ -112,6 +114,7 @@ body {
     padding: 20px;
 }
 
+/*Opciones de productos*/
 .opciones {
     padding: 20px;
     border-radius: 10px; 
@@ -147,6 +150,7 @@ body {
     color: #333; 
 }
 
+/*Productos*/
 .productos {
     padding: 50px 20px;
     text-align: center;
@@ -178,6 +182,7 @@ body {
     border-radius: 10px;
     object-fit: cover;
 }
+
 .mas-informacion{
     font-size: 24px;
     font-weight: 400;
@@ -196,6 +201,7 @@ body {
     background-color: #25d366;
     transform: scale(1.05);
 }
+
 .carrito{
     color: #f0ebeb;
     background-color: #000000;
@@ -214,6 +220,7 @@ body {
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
 }
 
+/*Promociones*/
 .promosExclusivas {
     margin: 0 auto;
     padding: 20px;
@@ -281,6 +288,7 @@ body {
     background-color: #1ebc5b;
 }
 
+/*Medios de pago*/
 .pagos{
     margin: auto;
     height: 300px;
@@ -292,16 +300,7 @@ body {
     padding: 50px;
 }
 
-
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-.products {
-    animation: fadeIn 2s;
-}
-
+/*Footer*/
 .pie-pagina {
     width: 100%;
     background-color: bisque;
@@ -362,10 +361,7 @@ body {
     height: 80%;
 }
 
-@media screen and (max-width:800px) {
-    
-}
-
+/*Diseño reponsivo de la pagina*/
 @media screen and (max-width: 650px) {
 
     body{
