@@ -41,13 +41,17 @@ body {
 }
 
 .contacto_titulo {
-    padding-left: 3em;
-    margin-bottom: 0px;
-    width: 15%;
+    text-align: center;
+    font-size: 2.5em;
+    color: #007bff;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 .pixel {
-    width: 50%;
+    width: 80%;
     height: 1px;
     margin-top: 1px;
     background-color: black;
@@ -57,7 +61,7 @@ body {
 }
 
 .contacto_datos_conteiner {
-    display: flex;
+
     justify-content: center;
 
     margin: auto;
@@ -65,7 +69,7 @@ body {
     width: 100%;
 }
 
-.asd {
+.grupo_datos {
     display: inline-block;
     width: 33%;
     margin: auto;
@@ -100,24 +104,45 @@ body {
 
 .container {
     margin-top: 50px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 30px;
 }
 
 .form-label {
     font-weight: bold;
+    color: #555;
 }
 
 .form-control {
-    border-radius: 5px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.25);
 }
 
 .btn-primary {
     background-color: #007bff;
     border-color: #007bff;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .btn-primary:hover {
     background-color: #0056b3;
     border-color: #004085;
+}
+
+.text-center {
+    margin-top: 20px;
 }
 
 .titulo-rojo {
@@ -127,7 +152,7 @@ body {
     font-weight: 700;
     text-align: center;
     padding: 20px;
-    margin-top:10px ;
+    margin-top: 15px;
 }
 
 .titulo-verde {
@@ -137,8 +162,10 @@ body {
     font-weight: 700;
     text-align: center;
     padding: 20px;
-    margin-top:10px ;
+    margin-top: 50px;
 }
+
+/*de aca para abajo footer*/
 .pie-pagina {
     width: 100%;
     background-color: bisque;
@@ -201,12 +228,14 @@ body {
 
 
 @media screen and (max-width: 650px) {
+
     /*Navbar*/
-    .navbar{
+    .navbar {
         flex-direction: column;
         padding: 0.5rem;
     }
-    .navbar .botonera{
+
+    .navbar .botonera {
         display: flex;
         flex-direction: column;
         padding: 0.2rem;
@@ -214,20 +243,21 @@ body {
 
     }
 
-    .navbar .botonera a{
+    .navbar .botonera a {
         margin: 5px 0;
     }
 
-    .logo{
+    .logo {
         width: 3rem;
     }
 
     /*Footer*/
-    .grupo1{
+    .grupo1 {
         grid-template-columns: 1fr;
-        gap:20px;
+        gap: 20px;
         padding: 20px 0;
     }
+
     .pie-pagina .grupo-1 {
         width: 20%;
         grid-template-columns: repeat(1, 1fr);
@@ -235,37 +265,45 @@ body {
         padding: 35px 0px;
     }
 
-    .box figure img{
+    .box figure img {
         width: 100%;
     }
 
-    .box h2{
+    .box h2 {
         font-size: 1.5rem;
     }
 
-    .box p{
+    .box p {
         font-size: 0.9rem;
     }
 
-    .redes-sociales a{
+    .redes-sociales a {
         width: 35px;
         height: 35px;
         line-height: 35px;
         padding: 10px;
     }
 
-    .grupo-2 small{
+    .grupo-2 small {
         font-size: 0.8rem;
     }
 
-    .mapa{
+    .mapa {
         width: 100%;
         height: 200px;
     }
 
-    .img-pie{
+    .img-pie {
         height: 10rem;
         width: 10rem;
     }
 
+}
+
+@media screen and (max-width: 1020px) {
+    .grupo_datos {
+        display: block;
+        width: 100%;
+        margin: auto;
+    }
 }
