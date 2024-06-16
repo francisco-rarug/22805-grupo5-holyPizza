@@ -146,17 +146,25 @@ body {
     text-align: justify;
 }
 
+.equipo-trabajo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100% !important;
+}
+
 /*NUESTRO EQUIPO DE TRABAJO*/
-.equipo-trabajo {
-    padding: 3rem;
+.equipo-trabajo .contenedor{
+    padding: 6rem 3rem;
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows: 1fr;
+    grid-template-rows: 23rem;
     grid-template-areas: 
         "bloque-1 carrousel bloque-2";
     justify-content: center;
     align-items: stretch;
-    
+    width: 75%;
+  
 
 }
 
@@ -167,6 +175,7 @@ body {
     flex-direction: column;
     text-align: justify;
     height: 100%;
+    max-height: 25rem !important;
 }
 
 
@@ -187,16 +196,67 @@ body {
 
 }
 
+@media screen and (max-width: 1330px) {
+    .equipo-trabajo .contenedor{
+        width: 85%;
+    }
+}
+
+
+@media screen and (max-width: 1120px) {
+    .equipo-trabajo .contenedor{
+        width: 90%;
+
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .equipo-trabajo .contenedor{
+        width: 100%;
+
+    }
+
+    .grid-item{
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .equipo-trabajo .contenedor{
+        grid-template-rows: 20rem !important;
+    }
+
+
+}
+
+@media screen and (max-width: 760px) {
+    .equipo-trabajo .contenedor{
+        grid-template-rows: 15rem !important;
+    }
+
+
+}
+
 
 .contenedor-carrousel {
     grid-area: carrousel;
-    width:100%;
-    height: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Evita que las imágenes se salgan del contenedor */
 }
 
-.carousel-item img{
-    height: 30rem;
+.carousel-inner {
     width: 100%;
+    height: 100%;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que la imagen cubra todo el área del carrusel */
 }
 
 /*
