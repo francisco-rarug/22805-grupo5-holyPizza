@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/estilos/productos.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!--usuario-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <title>Productos</title>
@@ -31,146 +31,128 @@
             <a href="contacto.html"><i class="bi bi-person-circle text-light" style="font-size: 2rem;"></i></a>
         </div>
     </header>
+    <!--<h2 class="titulo-verde animate__animated animate__pulse">Medios de pago</h2>
+    <h2 class="titulo-rojo animate__animated animate__pulse">Mas informacion sobre nosotros</h2>-->
+
 
     <main class="seccionProductos">
+        <div class="d-flex justify-content-center my-3">
+            <button type="button" class="btn btn-primary mx-auto" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Informacion importante
+            </button>
+        </div>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Informacion importante</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Mas adelante se podra comprar desde la pagina
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2 class="titulo-rojo animate__animated animate__backInUp">Recomendacion del chef</h2>
         <div class="container">
             <div class="row animate__animated animate__backInUp">
-                <div class="col-md-6 col-lg-4 mt-4 mb-2">
+                <div class="col-md-6 col-lg-4 mt-2 mb-3 ">
                     <div class="card text-center">
-                        <img src="/Recursos/ensalada.jfif" class="card-img-top p-3 rounded" alt="...">
+                        <img src="/Recursos/producto_1.jpg" class="card-img-top p-3 rounded-5" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Le Bosco</h5>
+                            <p class="card-text">Una pizza para conectar con tus raices.</p>
+                            <a href="#" class="btn btn-primary disabled">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mt-2 mb-3 ">
+                    <div class="card text-center">
+                        <img src="/Recursos/ñoquis.jfif" class="card-img-top p-3 rounded-5" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Ñoquis</h5>
+                            <p class="card-text">La receta tradicional de la nona.</p>
+                            <a href="#" class="btn btn-primary disabled">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mt-2 mb-3 ">
+                    <div class="card text-center">
+                        <img src="/Recursos/pizza-promos.jpg" class="card-img-top p-3 rounded-5" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">El Salame</h5>
+                            <p class="card-text">Para compartir con tus amigos salames.</p>
+                            <a href="#" class="btn btn-primary disabled">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="titulo-verde animate__animated animate__backInUp">Mas cosas ricas</h2>
+        <div class="container">
+            <div class="row animate__animated animate__backInUp">
+                <div class="col-md-6 col-lg-4 mt-2 mb-3 ">
+                    <div class="card text-center">
+                        <img src="/Recursos/producto_2.jpg" class="card-img-top p-3 rounded-5" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Empanada</h5>
+                            <p class="card-text">Las empanadas mas ricas y jugosas.</p>
+                            <a href="#" class="btn btn-primary disabled">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mt-2 mb-3 ">
+                    <div class="card text-center">
+                        <img src="/Recursos/hamburgesa.jpg" class="card-img-top p-3 rounded-5" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">EL Yonqui</h5>
+                            <p class="card-text">La tipica hamburguesa pero mas rica.</p>
+                            <a href="#" class="btn btn-primary disabled">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mt-2 mb-3 ">
+                    <div class="card text-center">
+                        <img src="/Recursos/ensalada.jfif" class="card-img-top p-3 rounded-5" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Ensalata</h5>
                             <p class="card-text">La mejor ensalata de toti Argentina.</p>
-                            <a href="#" class="btn btn-primary disabled ">Comprar</a>
+                            <a href="#" class="btn btn-primary disabled">Comprar</a>
                         </div>
                     </div>
                 </div>
-
-                <div class="col-md-6 col-lg-4 mt-4 mb-2">
+                <div class="col-md-6 col-lg-4 mt-2 mb-3 ">
                     <div class="card text-center">
-                        <img src="/Recursos/pizza-promos.jpg" class="card-img-top  p-3 rounded" alt="...">
+                        <img src="/Recursos/faina.jpg" class="card-img-top p-3 rounded-5" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <a href="#" class="btn btn-primary  disabled">Go somewhere</a>
+                            <h5 class="card-title">Faina</h5>
+                            <p class="card-text">Lo mejor para la mejor pizza.</p>
+                            <a href="#" class="btn btn-primary disabled">Comprar</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 mt-4 mb-2">
+                <div class="col-md-6 col-lg-4 mt-2 mb-3 ">
                     <div class="card text-center">
-                        <img src="/Recursos/peperoni.jpg" class="card-img-top  p-3 rounded" alt="...">
+                        <img src="/Recursos/tarta.jfif" class="card-img-top p-3 rounded-5" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <a href="#" class="btn btn-primary  disabled">Go somewhere</a>
+                            <h5 class="card-title">Tarta</h5>
+                            <p class="card-text">Una simple tarta pero deliciosa.</p>
+                            <a href="#" class="btn btn-primary disabled">Comprar</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 mt-4 mb-2">
+                <div class="col-md-6 col-lg-4 mt-2 mb-3 ">
                     <div class="card text-center">
-                        <img src="/Recursos/nachos.webp" class="card-img-top  p-3 rounded" alt="...">
+                        <img src="/Recursos/sorrentinos.webp" class="card-img-top p-3 rounded-5" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <a href="#" class="btn btn-primary  disabled">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mt-4 mb-2">
-                    <div class="card text-center">
-                        <img src="/Recursos/producto_2.jpg" class="card-img-top  p-3 rounded" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <a href="#" class="btn btn-primary  disabled">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4 mt-4 mb-2">
-                    <div class="card text-center">
-                        <img src="/Recursos/producto_3.webp" class="card-img-top  p-3 rounded" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <a href="#" class="btn btn-primary  disabled">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4 mt-4 mb-2">
-                    <div class="card text-center">
-                        <img src="/Recursos/pizza-promos.jpg" class="card-img-top  p-3 rounded" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <a href="#" class="btn btn-primary  disabled">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4 mt-4 mb-2">
-                    <div class="card text-center">
-                        <img src="/Recursos/pancho.jpg" class="card-img-top  p-3 rounded" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <a href="#" class="btn btn-primary  disabled">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4 mt-4 mb-2">
-                    <div class="card text-center">
-                        <img src="/Recursos/sandwiches.jpg" class="card-img-top  p-3 rounded" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <a href="#" class="btn btn-primary  disabled">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4 mt-4 mb-2">
-                    <div class="card text-center">
-                        <img src="/Recursos/burritos.jfif" class="card-img-top  p-3 rounded" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <a href="#" class="btn btn-primary  disabled">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4 mt-4 mb-2">
-                    <div class="card text-center">
-                        <img src="/Recursos/tarta.jfif" class="card-img-top  p-3 rounded" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <a href="#" class="btn btn-primary  disabled">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4 mt-4 mb-2">
-                    <div class="card text-center">
-                        <img src="/Recursos/hamburgesa.jpg" class="card-img-top  p-3 rounded" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <a href="#" class="btn btn-primary  disabled">Go somewhere</a>
+                            <h5 class="card-title">Sorrentinos</h5>
+                            <p class="card-text">Rellenos de sabor que hasta la nona se sorprende.</p>
+                            <a href="#" class="btn btn-primary disabled">Comprar</a>
                         </div>
                     </div>
                 </div>
@@ -178,9 +160,48 @@
         </div>
 
 
-    </main>
+        <h2 class="titulo-rojo animate__animated animate__backInUp">Para picar</h2>
+        <div class="container">
+            <div class="row animate__animated animate__backInUp">
+                <div class="col-md-6 col-lg-4 mt-2 mb-3 ">
+                    <div class="card text-center">
+                        <img src="/Recursos/sandwiches.jpg" class="card-img-top p-3 rounded-5" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Sandwiches</h5>
+                            <p class="card-text">Un changuchito por favor.</p>
+                            <a href="#" class="btn btn-primary disabled">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mt-2 mb-3 ">
+                    <div class="card text-center">
+                        <img src="/Recursos/cafe.jfif" class="card-img-top p-3 rounded-5" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Cafe</h5>
+                            <p class="card-text">Para estar despierto todo el dia.</p>
+                            <a href="#" class="btn btn-primary disabled">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mt-2 mb-3 ">
+                    <div class="card text-center">
+                        <img src="/Recursos/fernet.webp" class="card-img-top p-3 rounded-5" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Fernet</h5>
+                            <p class="card-text">Una tapita para el dolor de panza.</p>
+                            <a href="#" class="btn btn-primary disabled">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <footer class="pie-pagina mt-4">
+
+
+
+    </main>
+    <footer class="pie-pagina ">
+        <h2 class="titulo-verde animate__animated animate__backInUp">Mas informacion sobre nosotros</h2>
         <div class="grupo-1">
             <div class="box">
                 <figure>
