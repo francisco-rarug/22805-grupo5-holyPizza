@@ -89,9 +89,10 @@ body {
     box-shadow: 0 4px 6px rgba(223, 10, 10, 0.1);
 }
 
-.conocenos:hover {
-    background-color: #690c0c;
-    color: #fff;
+.conocenos:hover  {
+    background: linear-gradient(90deg, green 33.33%, white 33.33%, white 66.67%, red 66.67%);
+    color: #000000;
+    font-weight: bold;
     transform: scale(1.05);
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
 }
@@ -214,8 +215,9 @@ body {
 }
 
 .carrito:hover {
-    background-color: rgb(8, 216, 35);
-    color: #fffefe;
+    background: linear-gradient(90deg, green 33.33%, white 33.33%, white 66.67%, red 66.67%);
+    color: #000000;
+    font-weight: bold;
     transform: scale(1.05);
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
 }
