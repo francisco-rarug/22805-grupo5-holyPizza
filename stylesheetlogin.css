@@ -1,25 +1,22 @@
 .contenedor {
 
-    margin: auto auto auto auto;
+    
     width: 500px;
     height: auto;
     padding: 30px;
     border-radius: 10px;
     background: linear-gradient(to right, rgba(0, 0, 0, 0.336), rgba(19, 19, 19, 0.336)),
         rgba(255, 255, 255, 0.03);
-    top: 100px;
     position: relative;
 
 }
 
-h2 {
-    margin: 30px 120px 30px 120px;
+.h2login {
     font-size: 30px;
     color: rgb(255, 145, 0);
     text-align: center;
     letter-spacing: 5px;
     text-transform: uppercase;
-
 }
 
 
