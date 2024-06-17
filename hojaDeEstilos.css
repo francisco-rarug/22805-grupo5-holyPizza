@@ -8,22 +8,7 @@ body {
     background-color: bisque;
 }
 
-.imagen-tarjeta{
-    background: linear-gradient(rgba(0, 0, 0, 1),rgba(0, 0, 0, 0.1) ) ,  
-    url('Recursos/pizzahome.jpg') no-repeat center center/cover;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-
-.imagen-tarjeta h1{
-    color: #fff;
-    font-size: 3.5rem;
-    text-shadow: 2px 2px 4px rgb(6, 117, 30);
-}
-
+/*Navbar*/
 .navbar{
     display: flex;
     background-color: rgba(255, 255, 255, 0) !important; 
@@ -54,6 +39,23 @@ body {
 
 .logo{
     width: 4rem;
+}
+
+/*Imagen principal junto con titulos*/
+.imagen-tarjeta{
+    background: linear-gradient(rgba(0, 0, 0, 1),rgba(0, 0, 0, 0.1) ) ,  
+    url('Recursos/pizzahome.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imagen-tarjeta h1{
+    color: #fff;
+    font-size: 3.5rem;
+    text-shadow: 2px 2px 4px rgb(6, 117, 30);
 }
 
 .imagen-tarjeta h6{
@@ -87,14 +89,15 @@ body {
     box-shadow: 0 4px 6px rgba(223, 10, 10, 0.1);
 }
 
-.conocenos:hover {
-    background-color: #690c0c;
-    color: #fff;
+.conocenos:hover  {
+    background: linear-gradient(90deg, green 33.33%, white 33.33%, white 66.67%, red 66.67%);
+    color: #000000;
+    font-weight: bold;
     transform: scale(1.05);
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
 }
 
-
+/*Titulos de secciones*/
 .titulo-rojo {
     background-color: #e70909;
     color: #ffffff;
@@ -112,6 +115,7 @@ body {
     padding: 20px;
 }
 
+/*Opciones de productos*/
 .opciones {
     padding: 20px;
     border-radius: 10px; 
@@ -147,6 +151,7 @@ body {
     color: #333; 
 }
 
+/*Productos*/
 .productos {
     padding: 50px 20px;
     text-align: center;
@@ -178,6 +183,7 @@ body {
     border-radius: 10px;
     object-fit: cover;
 }
+
 .mas-informacion{
     font-size: 24px;
     font-weight: 400;
@@ -196,6 +202,7 @@ body {
     background-color: #25d366;
     transform: scale(1.05);
 }
+
 .carrito{
     color: #f0ebeb;
     background-color: #000000;
@@ -208,12 +215,14 @@ body {
 }
 
 .carrito:hover {
-    background-color: rgb(8, 216, 35);
-    color: #fffefe;
+    background: linear-gradient(90deg, green 33.33%, white 33.33%, white 66.67%, red 66.67%);
+    color: #000000;
+    font-weight: bold;
     transform: scale(1.05);
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
 }
 
+/*Promociones*/
 .promosExclusivas {
     margin: 0 auto;
     padding: 20px;
@@ -281,23 +290,19 @@ body {
     background-color: #1ebc5b;
 }
 
-
-
-.pepe{
+/*Medios de pago*/
+.pagos{
     margin: auto;
     height: 300px;
 }
 
-
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+.tarjetas{
+    margin: auto;
+    height: 300px;
+    padding: 50px;
 }
 
-.products {
-    animation: fadeIn 2s;
-}
-
+/*Footer*/
 .pie-pagina {
     width: 100%;
     background-color: bisque;
@@ -358,34 +363,175 @@ body {
     height: 80%;
 }
 
-@media screen and (max-width:800px) {
-    .pie-pagina .grupo-1 {
+/*Diseño reponsivo de la pagina*/
+@media screen and (max-width: 650px) {
+
+    body{
+        font-size: 14px;
+    }
+    /*Imagen Principal*/
+    .imagen-tarjeta{
+        height: 70vh;
+        padding: 20px;
+        text-align: center;
+        
+    }
+
+    .imagen-tarjeta h1{
+        display: none;
+    }
+    .imagen-tarjeta h6{
+        display: none;
+    }
+    .imagen-tarjeta p{
+        font-size: 1rem;
+        margin-top: 200px;
+    }
+
+    /*Navbar*/
+    .navbar{
+        flex-direction: column;
+        padding: 0.5rem;
+    }
+    .navbar .botonera{
+        display: flex;
+        flex-direction: column;
+        padding: 0.2rem;
+        align-items: center;
+
+    }
+
+    .navbar .botonera a{
+        margin: 5px 0;
+    }
+
+    .logo{
+        width: 3rem;
+    }
+
+    /*conocenos*/
+    .conocenos{
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+
+    /*Titulos*/
+    .titulo-rojo,
+    .titulo-verde{
+        font-size: 1.5rem;
+        padding: 10px;
+    }
+
+    /*opciones*/
+    .opciones{
+        padding: 10px;
+    }
+
+    .opciones-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .opcion-imagen{
+        padding: 10px;
+    }
+
+    .opcion-imagen img{
+        max-width: 70px;
+    }
+
+    .opcion-imagen h3{
+        font-size: 1rem;
+    }
+
+    /*Productos*/
+    .productos{
+        padding: 20px;
+    }
+
+    .productos-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .tarjeta-productos{
+        margin:5px;
+        padding: 10px;
+    }
+
+    .tarjeta-productos img{
+        height: 100px;
+    }
+
+    /*Mas informacion*/
+    .mas-informacion{
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+
+    /*carrito boton*/
+    .carrito{
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    /*promos*/
+    .promos{
+        flex-direction: column;
         width: 100%;
+        padding: 10px;
+    }
+
+    .promos img{
+        max-width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .promos-content{
+        font-size: 0.9rem;
+    }
+
+    /*footer*/
+    .grupo1{
+        grid-template-columns: 1fr;
+        gap:20px;
+        padding: 20px 0;
+    }
+    .pie-pagina .grupo-1 {
+        width: 20%;
         grid-template-columns: repeat(1, 1fr);
         gap: 30px;
         padding: 35px 0px;
     }
-}
 
-@media screen and (max-width: 600px) {
-    .hero-text h1 {
-        font-size: 36px;
-    }
-    
-    .hero-text p {
-        font-size: 18px;
-    }
-
-    .product {
+    .box figure img{
         width: 100%;
     }
 
-    .navbar {
-        flex-direction: column;
+    .box h2{
+        font-size: 1.5rem;
     }
 
-    .navbar-logo img {
-        height: 80px;
+    .box p{
+        font-size: 0.9rem;
+    }
+
+    .redes-sociales a{
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        padding: 10px;
+    }
+
+    .grupo-2 small{
+        font-size: 0.8rem;
+    }
+
+    .mapa{
+        width: 100%;
+        height: 200px;
+    }
+
+    .img-pie{
+        height: 10rem;
+        width: 10rem;
     }
 }
-
