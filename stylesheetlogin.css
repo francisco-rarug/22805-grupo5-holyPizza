@@ -98,6 +98,7 @@ input[type="submit"]:hover {
 }
 .a1:hover{
     color: rgb(112, 0, 0);
+    font-size: 16px;
 
 }
 
