@@ -1,23 +1,15 @@
-html {
-    background: black;
-
-}
-
-body {
-    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1)),
-        url('Recursos/pizzahome.jpg') no-repeat center center/cover;
-    height: 900px;
-}
-
 .contenedor {
 
-    margin: 30px auto auto auto;
+    margin: auto auto auto auto;
     width: 500px;
     height: auto;
     padding: 30px;
     border-radius: 10px;
     background: linear-gradient(to right, rgba(0, 0, 0, 0.336), rgba(19, 19, 19, 0.336)),
         rgba(255, 255, 255, 0.03);
+    top: 100px;
+    position: relative;
+
 }
 
 h2 {
@@ -66,69 +58,19 @@ input {
     margin-bottom: 30px;
 }
 
-input[type="submit"] {
-    border: none;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    cursor: pointer;
-    padding: 15px;
-    margin-top: 30px;
-}
-
-input[type="submit"]:hover {
-    background-color: #ccc;
-    color: black;
-}
-
 
 .botonlink {
-    border: none;
     letter-spacing: 5px;
-    text-transform: uppercase;
-    cursor: pointer;
     padding: 15px;
     margin: 20px auto 20px auto;
     text-align: center;
-    text-decoration-color: #ccc;
-
 }
 
-.a1{
+.a1 {
     color: rgb(255, 145, 0);
 }
-.a1:hover{
+
+.a1:hover {
     color: rgb(112, 0, 0);
     font-size: 16px;
-
-}
-
-
-
-.navbar1 {
-    display: flex;
-    background-color: rgba(255, 255, 255, 0) !important;
-    justify-content: space-between;
-    align-items: center;
-
-    padding: 0.8rem 1rem;
-    width: 100%;
-}
-
-.navbar1 .botonera {
-    display: inherit;
-    justify-content: center;
-    align-items: center;
-    gap: 0.4rem;
-
-}
-
-.navbar1 .botonera a {
-    background-color: rgba(255, 255, 255, 0) !important;
-    border: none;
-    color: white;
-    font-size: 1.1rem;
-}
-
-.navbar1 .botonera a:hover {
-    color: #e40c0c;
 }
