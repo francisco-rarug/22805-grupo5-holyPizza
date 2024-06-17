@@ -104,15 +104,21 @@ body {
 
 .container {
     margin-top: 50px;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(90deg, green 33.33%, white 33.33%, white 66.67%, red 66.67%);
+    box-shadow: 0 4px 8px rgb(0, 0, 0);
     border-radius: 8px;
     padding: 30px;
 }
 
+.sombra{
+    box-shadow: 0 4px 8px rgb(0, 0, 0);
+}
+
+
+
 .form-label {
     font-weight: bold;
-    color: #555;
+    color: #000000;
 }
 
 .form-control {
