@@ -1,6 +1,5 @@
 .contenedor {
-
-    
+    top: -50px;
     width: 500px;
     height: auto;
     padding: 30px;
@@ -8,7 +7,6 @@
     background: linear-gradient(to right, rgba(0, 0, 0, 0.336), rgba(19, 19, 19, 0.336)),
         rgba(255, 255, 255, 0.03);
     position: relative;
-
 }
 
 .h2login {
