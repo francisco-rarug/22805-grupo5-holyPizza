@@ -1,0 +1,163 @@
+.contenedor {
+    top: -150px;
+    height: auto;
+    padding: 30px;
+    border-radius: 10px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.336), rgba(19, 19, 19, 0.336)),
+        rgba(255, 255, 255, 0.03);
+    position: relative;
+    max-width: 450px;
+}
+
+.h2login {
+    font-size: 30px;
+    color: rgb(255, 145, 0);
+    text-align: center;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+
+}
+
+
+.elemento {
+    margin: 30px 0px 0px 0px;
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 15px;
+    color: rgb(255, 145, 0);
+    text-align: left;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+
+
+.labelopciones {
+    color: antiquewhite;
+    font-size: 12px;
+    width: 400px;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.labelopciones:hover {
+    color: rgb(255, 145, 0);
+    font-size: 13px;
+}
+
+input {
+    width: 100%;
+    margin-top: 5px;
+    padding: 10px 0;
+    color: rgb(255, 145, 0);
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 30px;
+}
+
+
+.botonlink {
+    letter-spacing: 5px;
+    padding: 15px;
+    margin: 20px auto 20px auto;
+    text-align: center;
+}
+
+.a1 {
+    color: rgb(255, 145, 0);
+}
+
+.a1:hover {
+    color: rgb(112, 0, 0);
+    font-size: 16px;
+}
+
+
+
+
+.imagen-tarjeta1 {
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1)),
+        url('Recursos/pizzahome.jpg') no-repeat center center/cover;
+    height: 1100px;
+    display: flex;
+}
+
+
+
+
+@media screen and (max-width: 1050px) {
+
+    .elemento form input[type="text"],
+    .elemento form input[type="password"] {
+        width: 100%;
+    }
+
+    .labelopciones {
+        width: 100%;
+    }
+
+    .imagen-tarjeta1 {
+
+        height: 1400px;
+
+    }
+
+}
+
+
+@media screen and (max-width: 850px) {
+
+    .elemento form input[type="text"],
+    .elemento form input[type="password"] {
+        width: 100%;
+    }
+
+    .labelopciones {
+        width: 100%;
+    }
+
+    .imagen-tarjeta1 {
+
+        height: 1200px;
+    }
+
+}
+
+@media screen and (max-width: 541px) {
+
+    .elemento form input[type="text"],
+    .elemento form input[type="password"] {
+        width: 100%;
+    }
+
+    .labelopciones {
+        width: 100%;
+    }
+
+    .imagen-tarjeta1 {
+
+        height: 950px;
+    }
+
+}
+
+
+@media screen and (max-width: 376px) {
+
+    .elemento form input[type="text"],
+    .elemento form input[type="password"] {
+        width: 100%;
+    }
+
+    .labelopciones {
+        width: 100%;
+    }
+
+    .imagen-tarjeta1 {
+
+        height: 900px;
+    }
+
+}
