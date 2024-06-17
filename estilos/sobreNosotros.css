@@ -160,8 +160,6 @@ body {
     color: rgb(207, 207, 207);
 }
 
-
-
 .quienes-somos .container .informacion {
     width: 40%;
     display: flex;
@@ -220,9 +218,6 @@ body {
     padding-right: 0.5rem;
 }
 
-
-
-
 .bloque-1{
     grid-area: bloque-1;
     background-color: #008D44;
@@ -244,9 +239,6 @@ body {
     border-bottom-right-radius: 6px;
 
 }
-
-
-
 
 @media screen and (max-width: 1330px) {
     .equipo-trabajo .contenedor{
@@ -308,9 +300,6 @@ body {
 
 }
 
-
-
-
 .contenedor-carrousel {
     grid-area: carrousel;
     display: flex;
@@ -318,7 +307,7 @@ body {
     align-items: center;
     width: 100%;
     height: 100%;
-    overflow: hidden; /* Evita que las imágenes se salgan del contenedor */
+    overflow: hidden; 
 }
 
 .carousel-inner {
@@ -329,14 +318,9 @@ body {
 .carousel-item img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Asegura que la imagen cubra todo el área del carrusel */
+    object-fit: cover; 
 }
 
-/*
-.contenedor-carrousel {
-    width: 100%;
-    max-width: 300px;
-}*/
 
 .video {
     max-width: 100%;
