@@ -1,3 +1,7 @@
+*{
+    list-style: none;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -9,7 +13,7 @@ body {
 }
 
 /*Navbar*/
-.navbar{
+.nav-bar {
     display: flex;
     background-color: rgba(255, 255, 255, 0) !important; 
     justify-content: space-between;
@@ -19,25 +23,26 @@ body {
     width: 100%;
 }
 
-.navbar .botonera{
+.nav-bar .botonera {
     display: inherit;
     justify-content: center;
     align-items: center;
     gap: 0.4rem;
+}
 
-} 
-
-.navbar .botonera a{
+.nav-bar .botonera a {
     background-color: rgba(255, 255, 255, 0) !important; 
     border: none;
     color: white;
     font-size: 1.1rem;
+
 }
-.navbar .botonera a:hover{
+
+.nav-bar .botonera a:hover {
     color: #e40c0c;
 }
 
-.logo{
+.logo {
     width: 4rem;
 }
 
@@ -98,21 +103,30 @@ body {
 }
 
 /*Titulos de secciones*/
-.titulo-rojo {
-    background-color: #e70909;
+.barra-divisora {
+    height: 4rem;
+    background-color: #008D44;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.segunda-barra {
+    background-color: #C82A35;
+}
+
+.sub-titulo{
     color: #ffffff;
     font-size: 30px;
     font-weight: 700;
     text-align: center;
     padding: 20px;
 }
-.titulo-verde{
-    background-color: #25d366;
-    color: #ffffff;
-    font-size: 30px;
-    font-weight: 700;
-    text-align: center;
-    padding: 20px;
+
+@media screen and (max-width: 550px) {
+    .sub-titulo{
+        font-size: 20px;
+    }
 }
 
 /*Opciones de productos*/
@@ -242,7 +256,7 @@ body {
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    width: 1000px;
+    width: 80%;
     padding: 20px;
     margin: auto;
 }
@@ -302,24 +316,39 @@ body {
     padding: 50px;
 }
 
-/*Footer*/
+/* PIE DE PAGINA */
 .pie-pagina {
     width: 100%;
-    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .grupo-1 {
     width: 100%;
     max-width: 1200px;
-    margin:auto;
+    margin: auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
     gap: 50px;
     padding: 45px 0px;
+    justify-content: center;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .box figure {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .box figure img {
@@ -327,7 +356,7 @@ body {
 }
 
 .box h2 {
-    color:#463b01;
+    color: #463b01;
     margin-bottom: 25px;
     font-size: 20px;
 }
@@ -337,15 +366,21 @@ body {
     margin-bottom: 10px;
 }
 
+.redes-sociales {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+
 .redes-sociales a {
     display: inline-block;
     text-decoration: none;
     width: 45px;
     height: 45px;
     line-height: 45px;
-    margin-right: 10px;
     text-align: center;
-    transition:all 300ms ease;
+    transition: all 300ms ease;
 }
 
 .grupo-2 {
@@ -359,16 +394,44 @@ body {
 }
 
 .mapa {
-    width: 150%;
-    height: 80%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /*Diseño reponsivo de la pagina*/
+
+ /*Navbar*/
+ @media screen and (max-width:800px) {
+    .pie-pagina .grupo-1 {
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+        padding: 35px 0px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .nav-bar{
+        flex-direction: column;
+        position: relative;
+        background-color: #000000 !important;
+    }
+
+    .nav-bar .botonera{
+        flex-direction: column;
+    }
+}
+
 @media screen and (max-width: 650px) {
 
     body{
         font-size: 14px;
     }
+
     /*Imagen Principal*/
     .imagen-tarjeta{
         height: 70vh;
@@ -377,38 +440,14 @@ body {
         
     }
 
-    .imagen-tarjeta h1{
-        display: none;
-    }
-    .imagen-tarjeta h6{
-        display: none;
-    }
+
     .imagen-tarjeta p{
         font-size: 1rem;
-        margin-top: 200px;
+        margin-top: 0;
     }
 
-    /*Navbar*/
-    .navbar{
-        flex-direction: column;
-        padding: 0.5rem;
-    }
-    .navbar .botonera{
-        display: flex;
-        flex-direction: column;
-        padding: 0.2rem;
-        align-items: center;
-
-    }
-
-    .navbar .botonera a{
-        margin: 5px 0;
-    }
-
-    .logo{
-        width: 3rem;
-    }
-
+   
+    
     /*conocenos*/
     .conocenos{
         font-size: 1.2rem;
@@ -488,50 +527,48 @@ body {
     .promos-content{
         font-size: 0.9rem;
     }
+}
 
-    /*footer*/
-    .grupo1{
-        grid-template-columns: 1fr;
-        gap:20px;
-        padding: 20px 0;
+/*footer*/
+@media screen and (max-width: 600px) {
+    .hero-text h1 {
+        font-size: 36px;
     }
+    
+    .hero-text p {
+        font-size: 18px;
+    }
+
+    .product {
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar-logo img {
+        height: 80px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
     .pie-pagina .grupo-1 {
-        width: 20%;
-        grid-template-columns: repeat(1, 1fr);
-        gap: 30px;
-        padding: 35px 0px;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+
+        padding: 20px 10px;
     }
 
-    .box figure img{
-        width: 100%;
+    .box figure img {
+        width: 50%;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .pie-pagina .grupo-1 {
+        grid-template-columns: 1fr ;
     }
 
-    .box h2{
-        font-size: 1.5rem;
-    }
-
-    .box p{
-        font-size: 0.9rem;
-    }
-
-    .redes-sociales a{
-        width: 35px;
-        height: 35px;
-        line-height: 35px;
-        padding: 10px;
-    }
-
-    .grupo-2 small{
-        font-size: 0.8rem;
-    }
-
-    .mapa{
-        width: 100%;
-        height: 200px;
-    }
-
-    .img-pie{
-        height: 10rem;
-        width: 10rem;
-    }
 }
