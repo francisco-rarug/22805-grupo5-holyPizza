@@ -403,8 +403,8 @@ body {
 
 /*Diseño reponsivo de la pagina*/
 
- /*Navbar*/
- @media screen and (max-width:800px) {
+/*Navbar*/
+@media screen and (max-width:800px) {
     .pie-pagina .grupo-1 {
         width: 100%;
         grid-template-columns: repeat(1, 1fr);
@@ -446,7 +446,6 @@ body {
         margin-top: 0;
     }
 
-   
     
     /*conocenos*/
     .conocenos{
