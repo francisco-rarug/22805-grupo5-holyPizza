@@ -123,6 +123,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .segunda-barra {
@@ -300,8 +301,10 @@ body {
     }
 
     .contenedor-carrousel{
-        width: 70% !important;
+        width: 65% !important;
         max-height: 40rem;
+        border-radius: 1rem;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     }
 
     .bloque-1, .bloque-2{
@@ -313,7 +316,7 @@ body {
 @media screen and (max-width: 500px) {
 
     .contenedor-carrousel{
-        width: 95% !important;
+        width: 90% !important;
     }
 
 }
@@ -370,8 +373,11 @@ iframe {
 .card-elegir {
     padding: 0.5rem;
     box-sizing: border-box;
-    min-width: 19rem !important;
-    min-height: 19rem;
+    min-width: 15rem !important;
+    min-height: 10rem;
+
+    max-width: 30rem !important;
+
     border-radius: 10px !important;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7)
 }
