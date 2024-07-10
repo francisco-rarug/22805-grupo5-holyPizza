@@ -15,7 +15,7 @@ function validateLogin() {
     } else {
         const errorMessage = document.getElementById("error-message");
         errorMessage.textContent = "Credenciales incorrectas";
-        errorMessage.style.display = "block"; // Mostrar el mensaje de error
+        errorMessage.style.display = "block";
     }
 }
 
