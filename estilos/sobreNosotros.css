@@ -222,11 +222,14 @@ body {
     grid-area: bloque-1;
     background-color: #008D44;
     width:100%;
-    padding: 2rem;
+    padding: 1rem;
     text-align: start;
     line-height: 1.5rem;
     border-top-left-radius: 6px;
     border-bottom-left-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 
 }
 
@@ -234,10 +237,16 @@ body {
     grid-area: bloque-2;
     background-color: #C82A35;
     width:100%;
-    padding: 2rem;
+    padding: 1rem;
     border-top-right-radius: 6px;
     border-bottom-right-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
 
+.bloque-1 ul li, .bloque-2 ul li {
+    margin-top: 1.1rem;
 }
 
 @media screen and (max-width: 1330px) {
@@ -268,6 +277,15 @@ body {
 @media screen and (max-width: 950px) {
     .equipo-trabajo .contenedor{
         grid-template-rows: 20rem !important;
+    }
+
+    .bloque-1, .bloque-2{
+        padding: 1.5rem;
+    }
+
+    .bloque-1 ul li, .bloque-2 ul li {
+        margin-top: 0.3rem;
+        
     }
 
 }
