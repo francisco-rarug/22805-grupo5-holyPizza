@@ -18,3 +18,11 @@ function validateLogin() {
         errorMessage.style.display = "block"; // Mostrar el mensaje de error
     }
 }
+
+
+document.getElementById("formlogin").addEventListener("keydown", function (event) {
+    if (event.key === "Enter") {
+        event.preventDefault();
+        validateLogin();
+    }
+});
