@@ -170,6 +170,42 @@ body {
     margin-top: 20px;
 }
 
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 300px;
+    z-index: 1000;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.popup-content {
+    position: relative;
+    padding: 10px;
+}
+
+.popup .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #aaa;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.popup .close:hover,
+.popup .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 /* PIE DE PAGINA */
 .pie-pagina {
     width: 100%;

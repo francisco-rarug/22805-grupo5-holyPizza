@@ -37,25 +37,25 @@
     <div class="barra-divisora">
         <h3 class="sub-titulo">Bienvenido al formulario de consultas. </h3>
     </div>
-    <div class="container">
+
+    <div class="container" id="contact">
         <div class="row justify-content-center">
-            <form class="row g-3 col-md-8">
+            <form class="row g-3 col-md-8" id="contact-form" action="https://formspree.io/f/mkgwgooq" method="POST">
                 <div class="col-md-6">
                     <label for="inputEmail" class="form-label">Email</label>
-                    <input type="email" class="form-control sombra" id="inputEmail" placeholder="Ingrese mail">
+                    <input type="email" class="form-control sombra" id="inputEmail" name="email" placeholder="Ingrese mail">
                 </div>
                 <div class="col-md-6">
                     <label for="inputUser" class="form-label">Usuario</label>
-                    <input type="text" class="form-control sombra" id="inputUser" placeholder="Ingrese usuario">
+                    <input type="text" class="form-control sombra" id="inputUser" name="user" placeholder="Ingrese usuario">
                 </div>
                 <div class="col-12">
                     <label for="inputAsunto" class="form-label">Asunto</label>
-                    <input type="text" class="form-control sombra" id="inputAsunto" placeholder="Ingrese asunto">
+                    <input type="text" class="form-control sombra" id="inputAsunto" name="subject" placeholder="Ingrese asunto">
                 </div>
                 <div class="col-12">
                     <label for="inputDescripcion" class="form-label">Descripción</label>
-                    <textarea type="text" class="form-control sombra " id="inputDescripcion"
-                        placeholder="Ingrese la descripción de su problema"></textarea>
+                    <textarea class="form-control sombra" id="inputDescripcion" name="description" placeholder="Ingrese la descripción de su problema"></textarea>
                 </div>
                 <div class="col-12 text-center">
                     <button type="submit" class="btn btn-primary">Enviar consulta</button>
@@ -63,8 +63,14 @@
             </form>
         </div>
     </div>
-
-
+    
+    <div id="popup" class="popup" style="display:none;">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <p>¡Formulario enviado con éxito!</p>
+        </div>
+    </div>
+    
     <div class="contacto_datos_conteiner">
         <div class="grupo_datos">
             <h3 class="contacto_datos"><img src="/Recursos/icons/ubicacion_logo.png" alt="ubi"> Direccion</h3>
