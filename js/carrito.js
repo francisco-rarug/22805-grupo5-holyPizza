@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
                 <div>
                     <span>$${item.price}</span>
-                    <button class="btn btn-danger btn-sm ms-2 eliminar-item">Eliminar</button>
+                    <button class="btn btn-danger btn-sm ms-2 eliminar-item m-3">Eliminar</button>
                     <input type="number" min="1" class="form-control form-control-sm cantidad" value="${item.quantity}">
                 </div>
             `;

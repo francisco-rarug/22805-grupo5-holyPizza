@@ -173,7 +173,20 @@ body {
     align-items: center;
 }
 
+.main{
+    background:url('/Recursos/hoja-carrito.png') no-repeat center center/cover;
+}
 
+.pizza-gif{
+    height: 187px;
+}
+
+.contenedor-gifs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
 @media screen and (max-width: 700px) {
 
     .nav-bar{
