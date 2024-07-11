@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <p>${item.description}</p>
                 </div>
                 <div>
-                    <span>$${item.price}</span>
+                    <span class>$${item.price}</span>
                     <button class="btn btn-danger btn-sm ms-2 eliminar-item">Eliminar</button>
                     <input type="number" min="1" class="form-control form-control-sm cantidad" value="${item.quantity}">
                 </div>
@@ -70,11 +70,17 @@ document.addEventListener('DOMContentLoaded', function() {
         const total = carrito.reduce((acc, item) => acc + (item.price * item.quantity), 0);
         document.getElementById('total').textContent = total.toFixed(2);
 
-        inicializarEventosCarrito(); // Asegúrate de tener esta función si hay eventos adicionales en el carrito
-    }
+        // Actualizar el contador de productos en el carrito
+        const cantidadTotal = carrito.reduce((total, item) => total + item.quantity, 0);
+        document.getElementById('contador-carrito').textContent = cantidadTotal.toString();
 
-    function inicializarEventosCarrito() {
-        // Aquí puedes inicializar eventos adicionales en los elementos del carrito si es necesario
-        // Por ejemplo, eventos para eliminar productos o cambiar cantidades
+        // Añadir animación al contador de carrito
+        const contadorCarrito = document.getElementById('contador-carrito');
+        contadorCarrito.classList.add('animate__animated', 'animate__pulse');
+
+        // Remover la clase de animación después de un tiempo para que pueda repetirse
+        setTimeout(() => {
+            contadorCarrito.classList.remove('animate__animated', 'animate__pulse');
+        }, 500); // 500 milisegundos, ajusta este valor según la duración de tu animación
     }
 });

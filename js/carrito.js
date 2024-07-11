@@ -13,11 +13,11 @@ document.addEventListener('DOMContentLoaded', () => {
             div.classList.add('carrito-item', 'd-flex', 'justify-content-between', 'align-items-center');
             div.innerHTML = `
                 <div>
-                    <h5>${item.name}</h5>
-                    <p>${item.description}</p>
+                    <h4>${item.name}</h4>
+                    <p class="fs-5">${item.description}</p>
                 </div>
                 <div>
-                    <span>$${item.price}</span>
+                    <span class="fs-5">$${item.price}</span>
                     <button class="btn btn-danger btn-sm ms-2 eliminar-item m-3">Eliminar</button>
                     <input type="number" min="1" class="form-control form-control-sm cantidad" value="${item.quantity}">
                 </div>
@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Función para eliminar un item del carrito
     function eliminarItem(event) {
-        const nombre = event.target.parentElement.previousElementSibling.querySelector('h5').textContent;
+        const nombre = event.target.parentElement.previousElementSibling.querySelector('h4').textContent;
         carrito = carrito.filter(item => item.name !== nombre);
         actualizarCarrito();
     }
@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Función para actualizar la cantidad de un producto en el carrito
     function actualizarCantidad(event) {
         const cantidad = parseInt(event.target.value);
-        const nombre = event.target.parentElement.previousElementSibling.querySelector('h5').textContent;
+        const nombre = event.target.parentElement.previousElementSibling.querySelector('h4').textContent;
         const index = carrito.findIndex(item => item.name === nombre);
         if (index !== -1) {
             carrito[index].quantity = cantidad;
