@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/Recursos/Pizza_logo.png" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="/estilos/productos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!--usuario-->
@@ -29,29 +28,12 @@
         </div>
 
         <div>
-            <a href="/vista/productos.html"><i class="bi bi-cart text-light fs-3 me-2"></i></a>
+            <a href="/vista/carrito.html"><i class="bi bi-cart text-light fs-3 me-2"></i></a>
             <a href="/vista/login.html"><i class="bi bi-person-circle text-light fs-3"></i></a>
         </div>
     </header>
 
     <main class="seccionProductos">
-        <!--Pop-up-->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">Informacion importante</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        Mas adelante se podra comprar desde la pagina
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    </div>
-                </div>
-            </div>
-        </div>
         <!--Recomendacion del chef-->
         <div class="barra-divisora  animate__animated animate__backInUp">
             <h3 class="sub-titulo">Recomendacion del chef</h3>
@@ -64,8 +46,10 @@
                         <div class="card-body">
                             <h5 class="card-title">Le Bosco</h5>
                             <p class="card-text">Una pizza para conectar con tus raices.</p>
-                            <a href="#" class="btn btn-primary carrito" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal">Agregar a carrito</a>
+                            <button  class="btn btn-primary carrito"
+                                data-name="Le Bosco"
+                                data-description="Una pizza para conectar con tus raices."
+                                data-price=1000>Agregar a carrito</button>
                         </div>
                     </div>
                 </div>
@@ -75,8 +59,10 @@
                         <div class="card-body">
                             <h5 class="card-title">Ñoquis</h5>
                             <p class="card-text">La receta tradicional de la nona.</p>
-                            <a href="#" class="btn btn-primary carrito" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal">Agregar a carrito</a>
+                            <a href="#" class="btn btn-primary carrito"
+                                data-name="Ñoquis"
+                                data-description="La receta tradicional de la nona."
+                                data-price=2000>Agregar a carrito</a>
                         </div>
                     </div>
                 </div>
@@ -86,8 +72,10 @@
                         <div class="card-body">
                             <h5 class="card-title">El Salame</h5>
                             <p class="card-text">Para compartir con tus amigos salames.</p>
-                            <a href="#" class="btn btn-primary carrito" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal">Agregar a carrito</a>
+                            <a href="#" class="btn btn-primary carrito"
+                                data-name="El Salame"
+                                data-description="Para compartir con tus amigos salames."
+                                data-price=5000>Agregar a carrito</a>
                         </div>
                     </div>
                 </div>
@@ -105,8 +93,10 @@
                         <div class="card-body">
                             <h5 class="card-title">Empanada</h5>
                             <p class="card-text">Las empanadas mas ricas y jugosas.</p>
-                            <a href="#" class="btn btn-primary carrito" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal">Agregar a carrito</a>
+                            <a href="#" class="btn btn-primary carrito"
+                                data-name="Empanada"
+                                data-description="Las empanadas mas ricas y jugosas."
+                                data-price=9000>Agregar a carrito</a>
                         </div>
                     </div>
                 </div>
@@ -116,52 +106,10 @@
                         <div class="card-body">
                             <h5 class="card-title">EL Yonqui</h5>
                             <p class="card-text">La tipica hamburguesa pero mas rica.</p>
-                            <a href="#" class="btn btn-primary carrito" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal">Agregar a carrito</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mt-2 mb-3 ">
-                    <div class="card text-center">
-                        <img src="/Recursos/ensalada.jfif" class="card-img-top p-3 rounded-5" alt="Comida">
-                        <div class="card-body">
-                            <h5 class="card-title">Ensalata</h5>
-                            <p class="card-text">La mejor ensalata de toti Argentina.</p>
-                            <a href="#" class="btn btn-primary carrito" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal">Agregar a carrito</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mt-2 mb-3 ">
-                    <div class="card text-center">
-                        <img src="/Recursos/faina.jpg" class="card-img-top p-3 rounded-5" alt="Comida">
-                        <div class="card-body">
-                            <h5 class="card-title">Faina</h5>
-                            <p class="card-text">Lo mejor para la mejor pizza.</p>
-                            <a href="#" class="btn btn-primary carrito" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal">Agregar a carrito</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mt-2 mb-3 ">
-                    <div class="card text-center">
-                        <img src="/Recursos/tarta.jfif" class="card-img-top p-3 rounded-5" alt="Comida">
-                        <div class="card-body">
-                            <h5 class="card-title">Tarta</h5>
-                            <p class="card-text">Una simple tarta pero deliciosa.</p>
-                            <a href="#" class="btn btn-primary carrito" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal">Agregar a carrito</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mt-2 mb-3 ">
-                    <div class="card text-center">
-                        <img src="/Recursos/sorrentinos.webp" class="card-img-top p-3 rounded-5" alt="Comida">
-                        <div class="card-body">
-                            <h5 class="card-title">Sorrentinos</h5>
-                            <p class="card-text">Rellenos de sabor que hasta la nona se sorprende.</p>
-                            <a href="#" class="btn btn-primary carrito" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal">Agregar a carrito</a>
+                            <a href="#" class="btn btn-primary carrito"
+                                data-name="EL Yonqui"
+                                data-description="La tipica hamburguesa pero mas rica."
+                                data-price=8000>Agregar a carrito</a>
                         </div>
                     </div>
                 </div>
@@ -179,8 +127,10 @@
                         <div class="card-body">
                             <h5 class="card-title">Sandwiches</h5>
                             <p class="card-text">Un changuchito por favor.</p>
-                            <a href="#" class="btn btn-primary carrito" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal">Agregar a carrito</a>
+                            <a href="#" class="btn btn-primary carrito"
+                                data-name="Sandwiches"
+                                data-description="Un changuchito por favorboludito."
+                                data-price=8000>Agregar a carrito</a>
                         </div>
                     </div>
                 </div>
@@ -190,19 +140,10 @@
                         <div class="card-body">
                             <h5 class="card-title">Cafe</h5>
                             <p class="card-text">Para estar despierto todo el dia.</p>
-                            <a href="#" class="btn btn-primary carrito" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal">Agregar a carrito</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mt-2 mb-3 ">
-                    <div class="card text-center">
-                        <img src="/Recursos/fernet.webp" class="card-img-top p-3 rounded-5" alt="Comida">
-                        <div class="card-body">
-                            <h5 class="card-title">Fernet</h5>
-                            <p class="card-text">Una tapita para el dolor de panza.</p>
-                            <a href="#" class="btn btn-primary carrito" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal">Agregar a carrito</a>
+                            <a href="#" class="btn btn-primary carrito"
+                                data-name="Cafe"
+                                data-description="Para estar despierto todo el dia."
+                                data-price=7000>Agregar a carrito</a>
                         </div>
                     </div>
                 </div>
@@ -258,6 +199,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script src="/js/productos.js"></script>
 </body>
 
 </html>
