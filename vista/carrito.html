@@ -56,9 +56,44 @@
                 <img src="./../Recursos/pizza-13601_256.gif" alt="gif-pizza">
                 <img class="pizza-gif" src="./../Recursos/pizza-13598_256.gif" alt="gif-pizza">
             </div>
-
         </div>
-    </main>
+
+    <!--Formulario Modal-->
+        <div class="modal fade" id="pedidoModal" tabindex="-1" aria-labelledby="pedidoModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="pedidoModalLabel">Datos de Pedido</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="pedidoForm">
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="nombre" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="direccion" class="form-label">Dirección</label>
+                                <input type="text" class="form-control" id="direccion" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefono" class="form-label">Teléfono</label>
+                                <input type="tel" class="form-control" id="telefono" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="correo" class="form-label">Correo electrónico</label>
+                                <input type="email" class="form-control" id="correo" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary m-3 carrito">Confirmar Pedido</button>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    
+</main>
     <div class="barra-divisora"></div>
     <!--Footer-->
     <footer class="pie-pagina">

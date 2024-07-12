@@ -3,8 +3,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const carritoDOM = document.getElementById('carrito');
     const finalizarCompra = document.getElementById('finalizarCompra');
+    const pedidoForm = document.getElementById('pedidoForm');
+    const pedidoModal = new bootstrap.Modal(document.getElementById('pedidoModal'));
 
-    // Función para actualizar el carrito en el DOM y en localStorage
     function actualizarCarrito() {
         carritoDOM.innerHTML = '';
 
@@ -32,11 +33,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
         localStorage.setItem('carrito', JSON.stringify(carrito));
 
-        // Vincular eventos después de actualizar el carrito
         agregarEventos();
     }
 
-    // Función para agregar eventos a los elementos del carrito
     function agregarEventos() {
         carritoDOM.querySelectorAll('.eliminar-item').forEach(boton => {
             boton.addEventListener('click', eliminarItem);
@@ -46,17 +45,15 @@ document.addEventListener('DOMContentLoaded', () => {
             input.addEventListener('change', actualizarCantidad);
         });
 
-        finalizarCompra.addEventListener('click', finalizarCompraHandler);
+        finalizarCompra.addEventListener('click', mostrarFormularioPedido);
     }
 
-    // Función para eliminar un item del carrito
     function eliminarItem(event) {
         const nombre = event.target.parentElement.previousElementSibling.querySelector('h4').textContent;
         carrito = carrito.filter(item => item.name !== nombre);
         actualizarCarrito();
     }
 
-    // Función para actualizar la cantidad de un producto en el carrito
     function actualizarCantidad(event) {
         const cantidad = parseInt(event.target.value);
         const nombre = event.target.parentElement.previousElementSibling.querySelector('h4').textContent;
@@ -67,18 +64,30 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // Función para finalizar la compra
-    function finalizarCompraHandler() {
+    function mostrarFormularioPedido() {
         if (carrito.length > 0) {
-            alert('Compra finalizada con éxito!');
-            carrito = [];
-            localStorage.removeItem('carrito');
-            actualizarCarrito();
+            pedidoModal.show();
         } else {
             alert('No hay productos en el carrito.');
         }
     }
 
-    // Inicializar el carrito al cargar la página
+    pedidoForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+        const nombre = document.getElementById('nombre').value;
+        const direccion = document.getElementById('direccion').value;
+        const telefono = document.getElementById('telefono').value;
+        const correo = document.getElementById('correo').value;
+
+        console.log('Pedido confirmado:', { nombre, direccion, telefono, correo, carrito });
+
+        alert('Pedido confirmado. Gracias por tu compra!');
+        carrito = [];
+        localStorage.removeItem('carrito');
+        actualizarCarrito();
+        pedidoModal.hide();
+        pedidoForm.reset();
+    });
+
     actualizarCarrito();
 });
