@@ -15,11 +15,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div>
                     <h4>${item.name}</h4>
                     <p class="fs-5">${item.description}</p>
+                    <hr>
                 </div>
                 <div>
                     <span class="fs-5">$${item.price}</span>
                     <button class="btn btn-danger btn-sm ms-2 eliminar-item m-3">Eliminar</button>
                     <input type="number" min="1" class="form-control form-control-sm cantidad" value="${item.quantity}">
+                    <hr>
                 </div>
             `;
             carritoDOM.appendChild(div);
